@@ -1,7 +1,7 @@
 
 ### Chrome extension that allows users to quickly summarize the overview section of any Wikipedia article, tailored to the user's preferred complexity level, ranging from Kindergarten to PhD. 
 
-https://github.com/user-attachments/assets/2ec4305f-fff0-457b-bbcd-cc3748c5251b
+https://github.com/user-attachments/assets/78510c8f-29ad-47ea-808c-c295203bbaaf
 
 ### Usage
 1. Navigate to any Wikipedia article.
