@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Wikipedia Overview Summarizer",
+    "version": "1.0",
+    "description": "Summarizes the Wikipedia overview section using OpenAI.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://en.wikipedia.org/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
