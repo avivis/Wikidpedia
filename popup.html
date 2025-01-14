@@ -9,36 +9,88 @@
             line-height: 1.6;
             margin: 20px auto;
             padding: 0 20px;
-            max-width: 600px;
+            max-width: 1200px; 
             background-color: #ffffff;
             color: #202122;
         }
         h3 {
-            font-size: 1.5em;
+            font-size: 2.2em; 
             color: #222;
             margin-bottom: 20px;
+            text-align: center;
         }
         button {
             background-color: #f8f9fa;
             color: #000000;
-            padding: 10px;
+            padding: 17px; 
             width: 100%;
             border: 1px solid #a2a9b1;
-            border-radius: 3px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
-            font-family: inherit;
+            font-size: 15px; 
+            font-family: Georgia, "Times New Roman", Times, serif; 
             text-align: center;
         }
         button:hover {
             background-color: #eaf3ff;
         }
+        .slider-container {
+            margin: 15px 0;
+            position: relative;
+        }
+        input[type="range"] {
+            width: 100%; 
+            max-width: 1000px; 
+            height: 12px; 
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px; 
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+            background: #444;
+        }
+        .slider-labels {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: -20px; 
+            font-size: 1em; 
+            font-family: Georgia, "Times New Roman", Times, serif; 
+        }
+        #current-grade {
+            text-align: center;
+            margin: 5px 0;
+            font-size: 1em; 
+            font-weight: normal;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
     </style>
 </head>
 <body>
+    <h3> </h3>
+    <div class="slider-container">
+        <div class="slider-labels">
+            <span style="position: absolute; left: 0;">Kindergarten</span>
+            <span style="position: absolute; right: 0;">PhD</span>
+        </div>
+        <input type="range" id="complexity" min="1" max="13" value="1" />
+        <div id="current-grade">Kindergarten</div>
+    </div>
     <button id="summarize">Summarize</button>
     <script src="popup.js"></script>
 </body>
 </html>
-
 
