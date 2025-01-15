@@ -1,0 +1,13 @@
+#wikipedia-summarizer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #wikipedia-summarizer button:hover {
+    background-color: #d9e4f1;
+  }
+  
+  #wikipedia-summarizer input[type="range"] {
+    margin-top: 5px;
+  }
+  
